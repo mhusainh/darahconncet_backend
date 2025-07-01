@@ -1,0 +1,12 @@
+BEGIN;
+
+ALTER TABLE public.blood_requests
+DROP COLUMN IF EXISTS event_name,
+DROP COLUMN IF EXISTS event_date,
+DROP COLUMN IF EXISTS start_time,
+DROP COLUMN IF EXISTS end_time,
+DROP COLUMN IF EXISTS slots_available,
+DROP COLUMN IF EXISTS slots_booked,
+DROP COLUMN IF EXISTS event_type;
+
+COMMIT;

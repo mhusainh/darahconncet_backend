@@ -1,0 +1,14 @@
+ENV: "dev"
+PORT: "8081"
+POSTGRES:
+  HOST: "host.docker.internal"
+  PORT: "5432"
+  USER: "postgres"
+  PASSWORD: "mysecretpassword"
+  DATABASE: "github.com/mhusainh/DarahConnect/DarahConnectAPI"
+JWT:
+  SECRET_KEY: "asdaxzmcnzxdlajsdrqworukk"
+REDIS:
+  HOST: "localhost"
+  PORT: "6379"
+  PASSWORD: ""

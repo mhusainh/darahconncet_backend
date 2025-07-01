@@ -1,0 +1,7 @@
+BEGIN;
+
+ALTER TABLE public.blood_donations
+ADD COLUMN IF NOT EXISTS public_id VARCHAR(255),
+ADD COLUMN IF NOT EXISTS url_file VARCHAR(255);
+
+COMMIT;
